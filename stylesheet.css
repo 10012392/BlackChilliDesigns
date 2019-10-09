@@ -56,6 +56,12 @@ nav li {
 
 /* Responsive Rules */
 
+@media screen and (max-width:2560px) {
+    .mobile-display {
+        display:none;
+    }
+}
+
 @media screen and (max-width:750px) {
     header {
         height:250px;
@@ -69,18 +75,36 @@ nav li {
     header .desktop {
         display:none;
     }
+    .mobile-display{
+        display:none;
+    }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:650px) {
     header {
         height:200px;
     }
-    
+    .column {
+        display:none;
+    }
+    .row:after {
+        display:none;
+    } 
+    .content{
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .mobile-display{
+        display:inline-block;
+    }
+    .hire{
+        display:none;
+    }
 }
 
 .content {
-    margin-left:20%;
-    margin-right:20%;
+    margin-left:15%;
+    margin-right:15%;
 }
 
 * {
@@ -109,9 +133,19 @@ nav li {
 }
 
 /* Google maps */
-.googlemaps {
-    text-align:center;
-    padding:3%;
+.googlemaps-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.googlemaps-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width: 100%;
+    position:absolute; 
 }
 
 .addressinfo {
@@ -134,7 +168,7 @@ nav li {
     content:"";
     display:table;
     clear:both;
-}
+} 
 
 /*Contact Form */
 input[type=text], select, textarea {
@@ -146,6 +180,7 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    font-family:'Manjari', sans-serif;
  }
 
  input[type=submit] {
@@ -166,7 +201,6 @@ input[type=text], select, textarea {
     background-color: #f2f2f2;
     padding: 20px;
     color:black;
-    font-family:'Manjari', sans-serif;
   }
 
 footer { 
