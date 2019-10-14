@@ -77,11 +77,21 @@
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write Your Message Here: "></textarea>
         
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" onclick="validateForm()">
     </form>
 </div>
 <br>
 </div>
+
+<script>
+    function validateForm() {
+    var x = document.forms["myForm"]["contact"].value;
+    if (x == "") {
+        alert("Field must be filled out");
+        return false;
+    }
+}
+</script>
 
 <footer>
         <img src="images/black-chilli-design.PNG" alt="Black Chilli Designs" width="15%">
