@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Us</title>
+    <script src="myscripts.js"></script>
     <link rel="stylesheet" href="stylesheet.css" type="text/css" media="screen"/> 
 </head>
 <body>
@@ -29,15 +30,10 @@
     </header>
 <h1>Contact Us Today! </h1>
 <div class="content">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quam at ab possimus commodi aliquid. Reiciendis vitae impedit atque sit architecto? Rerum asperiores officia ratione excepturi corporis sapiente nam sed blanditiis ipsam commodi beatae ab vel voluptate sequi, corrupti optio, molestiae minus labore magnam quas. Fugiat nisi eaque fuga unde repudiandae at! Animi nobis molestiae accusamus suscipit illum dicta. Qui fugiat repellendus eveniet provident.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quis sunt, animi harum numquam eum laudantium obcaecati eveniet dolores id repudiandae itaque, molestiae laborum doloribus labore iste nulla asperiores facilis corporis. Quia aspernatur, temporibus quas animi pariatur dolorum autem id iusto molestias odit consectetur.</p>
-
-
 <div class="googlemaps-responsive">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.2009362193708!2d176.14160431531658!3d-37.73842997976598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6dda7a65b4a43b%3A0x3b1f9a5c8c8f470a!2s10b%20Roxanne%20Pl%2C%20Poike%2C%20Tauranga%203112!5e0!3m2!1sen!2snz!4v1567974951226!5m2!1sen!2snz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </div>
 
-<div class="addressinfo">
     <h2>Find Us Here</h2>
     <h3>Address:</h3>
     <p>Unit 10B Roxanne Place</p>
@@ -45,8 +41,10 @@
     <p>Taurnaga 3112</p>
     <h3>Phone Number</h3>
     <p>027-753-5296</p>
-</div>
-<a href="https://www.facebook.com/Black-Chilli-1610003975986930/"><img src="images/f_logo_RGB-Hex-Blue_512.PNG" alt="Facebook" width="5%"></a>
+
+<br>
+
+<a href="https://www.facebook.com/Black-Chilli-1610003975986930/"><img src="images/f_logo_RGB-Hex-Blue_512.png" alt="Facebook" width="5%"></a>
 
 <h2>Business Hours </h2>
 <p>Monday - Firday </p>
@@ -61,7 +59,7 @@
 <p>We would love to hear about your next project</p>
 
 <div class="container">
-    <form action="contact_us.html">
+    <form name="ContactForm" >
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your First Name: ">
 
@@ -69,29 +67,24 @@
         <input type="text" id="lname" name="lastname" placeholder="Your Last Name: ">
 
         <label for="email">Email Address</label>
-        <input type="text" id="email" name="email address" placeholder="Your Email Address: ">
+        <input type="text" id="email" name="emailaddress" placeholder="Your Email Address: ">
 
         <label for="phnum">Phone Number</label>
-        <input type="text" id="phnum" name="phone number" placeholder="Your Phone Number: ">
+        <input type="text" id="phnum" name="phonenumber" placeholder="Your Phone Number: ">
 
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write Your Message Here: "></textarea>
         
-        <input type="submit" value="Submit" onclick="validateForm()">
+        <input type="button" value="Submit" onclick="printData()">
     </form>
 </div>
 <br>
 </div>
 
-<script>
-    function validateForm() {
-    var x = document.forms["myForm"]["contact"].value;
-    if (x == "") {
-        alert("Field must be filled out");
-        return false;
-    }
-}
-</script>
+<div id="data">
+
+</div>
+<br>
 
 <footer>
         <img src="images/black-chilli-design.PNG" alt="Black Chilli Designs" width="15%">
