@@ -1,3 +1,4 @@
+/*Body of Page*/
 body {
     font-family:'Manjari', sans-serif;
     color:white;
@@ -43,6 +44,7 @@ header .logo a {
     width:300px; 
 }
 
+/*page Navigation*/
 nav ul {
     margin:0;
     padding:0;
@@ -57,12 +59,14 @@ nav li {
 /* Responsive Rules */
 
 @media screen and (max-width:2560px) {
+    /*Doesn't Display mobile display*/
     .mobile-display {
         display:none;
     }
 }
 
 @media screen and (max-width:750px) {
+    /*Changes the size of the header - and changes the display*/
     header {
         height:250px;
     }
@@ -81,6 +85,7 @@ nav li {
 }
 
 @media screen and (max-width:650px) {
+    /*Changes the display of the pages to fit smaller screen sizes*/
     header {
         height:200px;
     }
@@ -102,6 +107,7 @@ nav li {
     }
 }
 
+/*Page Display*/
 .content {
     margin-left:15%;
     margin-right:15%;
@@ -206,6 +212,19 @@ input[type=text], select, textarea {
     background-color: #D63638;
   }
 
+  input[type=reset] {
+    background-color: #D63638;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=reset]:hover {
+    background-color: #D63638;
+  }
+
   .container {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -213,6 +232,7 @@ input[type=text], select, textarea {
     color:black;
   }
 
+  /*Footer*/
 footer { 
     background:#000000;
     color:white;

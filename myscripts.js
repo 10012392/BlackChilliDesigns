@@ -26,7 +26,7 @@ function validateForm(fname, lname, email, phnum) {
     return true 
 }
 
-//Data Collection And Display
+//Collects And Displays Data
 function printData() {
     var fname = document.forms["ContactForm"]["firstname"];
     var lname = document.forms["ContactForm"]["lastname"];
