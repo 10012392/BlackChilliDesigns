@@ -23,6 +23,8 @@ function validateForm(fname, lname, email, phnum) {
         email.focus;
         return false
     }
+    else 
+    window.alert("Your message has been sent.")
     return true 
 }
 
@@ -35,7 +37,7 @@ function printData() {
 
     if (validateForm(fname, lname, email, phnum) == true) {
         var dataDiv = document.getElementById("data");
-        dataDiv.innerHTML += "First Name: " + fname.value;
+        dataDiv.innerHTML += "<br>First Name: " + fname.value;
         dataDiv.innerHTML += '<br>Last Name: ' + lname.value;
         dataDiv.innerHTML += '<br>Email Address: ' + email.value;
         dataDiv.innerHTML += '<br>Phone Number: ' + phnum.value;
