@@ -8,11 +8,7 @@ function validateForm(fname, lname, email, phnum) {
         fname.focus;
         return false;
     }
-    if (lname.value == "") {
-        window.alert("Please Enter Your Last Name");
-        lname.focus;
-        return false;
-    }
+
     if (email.value == "") {
         window.alert("Please Enter Email Address");
         email.focus;
